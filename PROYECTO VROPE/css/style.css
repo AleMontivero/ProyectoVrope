@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    background: rgb(255, 255, 255);
+    max-width: 1200px;
+    margin-left: 60px;
+    
+}
+
+/* Acá el Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    /* link mi carrito - text-decoration: none;*/
+    color: rgb(33, 23, 170);
+    font-weight: 600;
+
+}
+.logo img{
+    margin-left:475px;
+    width: 250px;
+    position: static;
+    display:flex;
+
+}
+
+/* Acá las tarjetas*/
+
+
+.contenido{
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .7s ease;
+}
+.mostrador .fila{
+    width: 100%;
+    display: flex;
+    justify-content: 10px;
+    margin-left: 180px;
+    margin-bottom: 100px;
+}
+
+.mostrador .fila .item{
+    max-width: 300px;
+    padding: 0px;
+    height: 370px;
+    border: 0px solid hsl(0, 0%, 4%);
+    text-align: center;
+    margin: 0 0px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: .7s;
+}
+.mostrador .fila .item:hover{
+    background-color: #c6c5c497;
+}
+.mostrador .fila .item img{
+    width: 87%;
+    margin: 5px;
+}
+.mostrador .fila .item .descripcion{
+    margin-top: 10px;
+    text-align:center;
+    color: #616161;
+    font-weight:100;
+}
+.mostrador .fila .item .precio{
+    color: hsl(0, 0%, 24%);
+    font-weight: 100;
+    font-size: 15px;
+}
+
+button{
+    max-width: 200px;
+    padding: 2%;
+}
